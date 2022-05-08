@@ -5,7 +5,7 @@ import datetime
 from datetime import datetime as dt
 
 st.set_page_config(layout="wide")
-st.header("Viu More Safety Detection - Live Stream")
+st.header("Viu More Safety Detection")
 col10, col11 = st.sidebar.columns([2, 1])
 col10.image("logo.png")
 col11.header("   ")
