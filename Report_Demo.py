@@ -80,7 +80,7 @@ if selected_page == "Live Stream":
     #show date & time
     today_formatted = today.strftime('%d %b %Y')
     st.subheader(str(today_formatted) + " - " + str(now))
-    col21, col22, col23 = st.columns([4, 1, 2])
+    col21, col22, col23 = st.columns([4, 1, 3])
     
     camera_zone = col23.selectbox("Select camera", ("Loading Dock", "Garage"))
     
