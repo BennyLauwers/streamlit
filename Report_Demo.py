@@ -87,6 +87,7 @@ if selected_page == "Live Stream":
     if camera_zone == "Loading Dock":
         video_bytes, todays_alert_values, delta = show_live_stream("Loading_Dock.mp4", "Report_Loading_Dock.csv")
         col21.video(video_bytes)
+        col22.markdown("")
         col23.subheader("Selected Camera:")
         col23.subheader("Loading Dock - Zone Detection")
         col23.metric("Today's Alerts vs Yesterday", todays_alert_values, delta=int(delta))
@@ -94,6 +95,7 @@ if selected_page == "Live Stream":
     elif camera_zone == "Garage":
         video_bytes, todays_alert_values, delta = show_live_stream("Garage.mp4", "Report_Garage.csv")
         col21.video(video_bytes)
+        col22.markdown("")
         col23.subheader("Selected Camera:")
         col23.subheader("Garage - Zone Detection")
         col23.metric("Today's Alerts vs Yesterday", todays_alert_values, delta=int(delta))
